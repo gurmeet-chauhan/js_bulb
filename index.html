@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+
+<body>
+    <img src="images/pic_bulboff.gif" id="bulb" alt="">
+    <script>
+        document.querySelector('#bulb').addEventListener('click', function (event) {
+            if (event.target.attributes.src.value == 'images/pic_bulboff.gif')
+                event.target.attributes.src.value = 'images/pic_bulbon.gif'
+
+            else
+                event.target.attributes.src.value = 'images/pic_bulboff.gif'
+
+        })
+
+    </script>
+</body>
+
+</html>
